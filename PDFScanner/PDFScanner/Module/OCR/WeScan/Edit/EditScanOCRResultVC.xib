@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GlacialIndifference-Regular.otf">
+            <string>GlacialIndifference-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditScanOCRResultVC" customModule="PDFScanner" customModuleProvider="target">
+            <connections>
+                <outlet property="selectedImageView" destination="th4-Tx-ja6" id="6Ik-q0-zWf"/>
+                <outlet property="textView" destination="pTu-n1-DWF" id="IWb-wO-Bax"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Jy-pr-vLB">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="510"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pTu-n1-DWF">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="510"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" red="0.1764705882" green="0.25098039220000001" blue="0.33725490200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="GlacialIndifference-Regular" family="Glacial Indifference" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="pTu-n1-DWF" secondAttribute="trailing" id="8pG-p8-iBs"/>
+                        <constraint firstItem="pTu-n1-DWF" firstAttribute="leading" secondItem="2Jy-pr-vLB" secondAttribute="leading" id="ZF7-t5-aFj"/>
+                        <constraint firstItem="pTu-n1-DWF" firstAttribute="top" secondItem="2Jy-pr-vLB" secondAttribute="top" id="jkR-Xb-5rY"/>
+                        <constraint firstAttribute="bottom" secondItem="pTu-n1-DWF" secondAttribute="bottom" id="yLs-dy-HTe"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="th4-Tx-ja6">
+                    <rect key="frame" x="20" y="405" width="60" height="85"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="th4-Tx-ja6" secondAttribute="height" multiplier="210:297" id="AiG-ev-W0U"/>
+                        <constraint firstAttribute="width" constant="60" id="QWe-cu-erb"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TEB-j5-J8A" userLabel="Bottom View">
+                    <rect key="frame" x="0.0" y="510" width="320" height="58"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyS-lx-N8E">
+                            <rect key="frame" x="0.0" y="6" width="80" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="YC7-td-NKF"/>
+                                <constraint firstAttribute="width" constant="80" id="onA-px-epa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="GlacialIndifference-Regular" family="Glacial Indifference" pointSize="12"/>
+                            <inset key="titleEdgeInsets" minX="-30" minY="28" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="25" minY="0.0" maxX="0.0" maxY="15"/>
+                            <state key="normal" title="Language" image="icon_language_30_black">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="selectLanguage:" destination="-1" eventType="touchUpInside" id="AIt-Vi-jFI"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="em4-fy-jIi">
+                            <rect key="frame" x="123.5" y="6" width="73" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="3tO-Hn-5zc"/>
+                                <constraint firstAttribute="width" constant="73" id="GVm-td-WbN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="GlacialIndifference-Regular" family="Glacial Indifference" pointSize="12"/>
+                            <inset key="titleEdgeInsets" minX="-30" minY="28" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="15"/>
+                            <state key="normal" title="Copy" image="icon_copy_30_black">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="copyText:" destination="-1" eventType="touchUpInside" id="Je3-GV-HfY"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cua-JS-5LO">
+                            <rect key="frame" x="247" y="6" width="73" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="73" id="6Vc-6w-T3g"/>
+                                <constraint firstAttribute="height" constant="45" id="dlB-Mp-9Yr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="GlacialIndifference-Regular" family="Glacial Indifference" pointSize="12"/>
+                            <inset key="titleEdgeInsets" minX="-32" minY="28" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="15"/>
+                            <state key="normal" title="Share" image="home_directory_share_button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="clickShareButton:" destination="-1" eventType="touchUpInside" id="PJ0-AP-jdE"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.1764705882" green="0.25098039220000001" blue="0.33725490200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="cua-JS-5LO" secondAttribute="trailing" id="BMJ-H5-QaH"/>
+                        <constraint firstItem="RyS-lx-N8E" firstAttribute="top" secondItem="TEB-j5-J8A" secondAttribute="top" constant="6" id="M84-eK-Nke"/>
+                        <constraint firstItem="RyS-lx-N8E" firstAttribute="leading" secondItem="TEB-j5-J8A" secondAttribute="leading" id="TGM-pG-zzS"/>
+                        <constraint firstAttribute="height" constant="58" id="dcV-sk-EJL"/>
+                        <constraint firstItem="cua-JS-5LO" firstAttribute="top" secondItem="TEB-j5-J8A" secondAttribute="top" constant="6" id="k3E-cc-xiW"/>
+                        <constraint firstItem="em4-fy-jIi" firstAttribute="centerX" secondItem="TEB-j5-J8A" secondAttribute="centerX" id="kQN-ht-S5Z"/>
+                        <constraint firstItem="em4-fy-jIi" firstAttribute="top" secondItem="TEB-j5-J8A" secondAttribute="top" constant="6" id="nd1-Gg-tVd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="TEB-j5-J8A" firstAttribute="bottom" secondItem="Kye-h9-Tk0" secondAttribute="bottom" id="2Pp-uu-vrQ"/>
+                <constraint firstItem="2Jy-pr-vLB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Boq-GV-NuF"/>
+                <constraint firstItem="th4-Tx-ja6" firstAttribute="bottom" secondItem="2Jy-pr-vLB" secondAttribute="bottom" constant="-20" id="CsJ-H5-Eie"/>
+                <constraint firstItem="TEB-j5-J8A" firstAttribute="top" secondItem="2Jy-pr-vLB" secondAttribute="bottom" id="ERO-r6-2GU"/>
+                <constraint firstItem="TEB-j5-J8A" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Z4B-Ot-Aag"/>
+                <constraint firstItem="th4-Tx-ja6" firstAttribute="leading" secondItem="2Jy-pr-vLB" secondAttribute="leading" constant="20" id="oDQ-ow-08r"/>
+                <constraint firstItem="2Jy-pr-vLB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qqJ-RD-eth"/>
+                <constraint firstAttribute="trailing" secondItem="2Jy-pr-vLB" secondAttribute="trailing" id="sp9-rR-vEy"/>
+                <constraint firstAttribute="trailing" secondItem="TEB-j5-J8A" secondAttribute="trailing" id="x6h-ei-xN8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Kye-h9-Tk0"/>
+            <point key="canvasLocation" x="135" y="102"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_directory_share_button" width="30" height="30"/>
+        <image name="icon_copy_30_black" width="30" height="30"/>
+        <image name="icon_language_30_black" width="30" height="30"/>
+    </resources>
+</document>

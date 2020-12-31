@@ -1,0 +1,58 @@
+/* 
+    localizable.strings
+    WeScanSampleProject
+
+    Created by Boris Emorine on 2/27/18.
+    Copyright © 2018 WeTransfer. All rights reserved.
+*/
+
+// home / sub directory
+
+"homefolder.create_new_folder.title" = "Create new folder";
+"homefolder.create_new_folder.message" = "Type new folder name below";
+"homefolder.create_new_folder.placeholder" = "folder name";
+"homefolder.create_new_folder.confirm.text" = "Create";
+"homefolder.create_new_folder.cancel.text" = "Cancel";
+
+//scan
+"scan.camera.top.button.auto" = "Auto";
+"scan.camera.top.button.manual" = "Manual";
+
+//scan - edit
+
+"scan.edit.bottom.step1.all" = "All";
+"scan.edit.bottom.step1.left" = "Left";
+"scan.edit.bottom.step1.right" = "Right";
+"scan.edit.bottom.step1.Continue" = "Continue";
+
+"scan.edit.bottom.step2.Turn" = "Turn";
+"scan.edit.bottom.step2.Brightness" = "Brightness";
+"scan.edit.bottom.step2.Contrast" = "Contrast";
+"scan.edit.bottom.step2.Done" = "Done";
+
+"scan.edit.bottom.step3.Share" = "Share";
+"scan.edit.bottom.step3.Edit" = "Edit";
+"scan.edit.bottom.step3.Sign" = "Sign";
+"scan.edit.bottom.step3.OCR" = "OCR";
+
+// Setting
+//  -lockapp
+"setting.toptitle" = "Setting";
+// H5
+"setting.h5.help.title" = "Help";
+"setting.h5.privacy_policy.title" = "Privacy Policy";
+"setting.h5.terms_of_use.title" = "Terms of Use";
+"setting.h5.subscriptions_info.title" = "Subscriptions Info";
+// Image Quality
+"setting.image_quality.low" = "Low       ";
+"setting.image_quality.medium" = "Medium";
+"setting.image_quality.high" = "High       ";
+"setting.image_quality.original" = "Original";
+"setting.version" = "Version";
+"setting.share_app.text" = "Have you heard about Scanner? Here is the link to get it from App Store";
+
+"setting.lockapp.toptitle.new" = "Enter your new passcode";
+"setting.lockapp.toptitle.confirm" = "Confirm your new passcode";
+"setting.lockapp.toptitle.input" = "Enter your passcode";
+"setting.lockapp.password_not_same" = "Two password not the same";
+"setting.lockapp.hintlabel.text" = "The passcode is required to launch the app";

@@ -1,0 +1,47 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '11.0'
+
+inhibit_all_warnings!
+target 'PDFScanner' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  source 'https://github.com/CocoaPods/Specs.git'
+#source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+  
+  # Pods for PDFScanner
+  pod 'GPUImage'
+  pod 'Masonry'
+  pod 'Realm'
+  pod 'UICKeyChainStore'
+  pod 'AFNetworking'
+  pod 'MBProgressHUD'
+  pod 'BadgeSwift', '~> 8.0'
+  pod 'SwiftyTesseract',    '~> 3.0'
+  pod 'CircleProgressBar', '~> 0.32'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/RemoteConfig'
+
+
+  pod 'YYModel'
+  pod 'YYText'
+  #内购
+  pod 'SwiftyStoreKit'
+  #钥匙串
+  pod 'SAMKeychain'
+
+  #Facebook SDK
+  pod 'FBSDKCoreKit'
+
+  #adjust
+  pod 'Adjust'
+
+
+  target 'PDFScannerTests' do
+    inherit! :search_paths
+    # Pods for testing
+#    pod 'Realm/Headers'
+    
+  end
+
+end

@@ -1,0 +1,14 @@
+/* 
+  InfoPlist.strings
+  PDFScanner
+
+  Created by Lucy Benson on 2020/4/23.
+  Copyright © 2020 cdants. All rights reserved.
+*/
+
+"CFBundleDisplayName" = "Scanner 360";
+
+
+
+"NSCameraUsageDescription" = "For scanning documents, Scanner 360 needs access to your camera";
+"NSPhotoLibraryUsageDescription" = "This will let you add images for scanning and editing from Camera Roll";
