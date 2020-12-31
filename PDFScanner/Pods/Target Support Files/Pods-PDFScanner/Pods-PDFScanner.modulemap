@@ -1,0 +1,6 @@
+framework module Pods_PDFScanner {
+  umbrella header "Pods-PDFScanner-umbrella.h"
+
+  export *
+  module * { export * }
+}

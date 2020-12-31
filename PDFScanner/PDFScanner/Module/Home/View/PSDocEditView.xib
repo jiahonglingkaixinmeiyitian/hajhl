@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GlacialIndifference-Regular.otf">
+            <string>GlacialIndifference-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PSDocEditView">
+            <rect key="frame" x="0.0" y="0.0" width="420" height="58"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcO-5J-HIU">
+                    <rect key="frame" x="0.0" y="6" width="80" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="OpH-2c-y7e"/>
+                        <constraint firstAttribute="width" constant="80" id="lPB-pH-1f7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GlacialIndifference-Regular" family="Glacial Indifference" pointSize="12"/>
+                    <inset key="titleEdgeInsets" minX="-30" minY="28" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="25" minY="0.0" maxX="0.0" maxY="15"/>
+                    <state key="normal" title="Share" image="home_directory_share_button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="clickShareButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="atO-aN-LcZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eE-wI-fZx">
+                    <rect key="frame" x="170" y="6" width="80" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="0HC-ta-aOe"/>
+                        <constraint firstAttribute="height" constant="45" id="QAQ-Hz-6qX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GlacialIndifference-Regular" family="Glacial Indifference" pointSize="12"/>
+                    <inset key="titleEdgeInsets" minX="-30" minY="28" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="25" minY="0.0" maxX="0.0" maxY="15"/>
+                    <state key="normal" title="Move" image="home_directory_move_button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="clickMoveButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="dnT-5q-chy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m76-Z4-dFJ">
+                    <rect key="frame" x="340" y="6" width="80" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="qMg-jd-QAc"/>
+                        <constraint firstAttribute="height" constant="45" id="xHA-ON-CVM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GlacialIndifference-Regular" family="Glacial Indifference" pointSize="12"/>
+                    <inset key="titleEdgeInsets" minX="-30" minY="28" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="25" minY="0.0" maxX="0.0" maxY="15"/>
+                    <state key="normal" title="Delete" image="home_directory_delete_button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="clickDeleteButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="NY9-M9-Ieb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.1764705882" green="0.25098039220000001" blue="0.33725490200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2eE-wI-fZx" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="EBQ-43-eYS"/>
+                <constraint firstItem="vcO-5J-HIU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="6" id="FYZ-2P-HaM"/>
+                <constraint firstItem="vcO-5J-HIU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Sun-UH-8NP"/>
+                <constraint firstAttribute="bottom" secondItem="vcO-5J-HIU" secondAttribute="bottom" constant="7" id="T78-HR-fSU"/>
+                <constraint firstAttribute="trailing" secondItem="m76-Z4-dFJ" secondAttribute="trailing" id="Ttn-f1-tT5"/>
+                <constraint firstItem="m76-Z4-dFJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="6" id="V0b-vl-YaA"/>
+                <constraint firstItem="2eE-wI-fZx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="6" id="bjR-00-auw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bottomHeightConstraint" destination="T78-HR-fSU" id="bnu-ZT-ssp"/>
+                <outlet property="deleteButton" destination="m76-Z4-dFJ" id="uzx-p1-9CJ"/>
+                <outlet property="moveButton" destination="2eE-wI-fZx" id="2hT-ic-nCL"/>
+                <outlet property="shareButton" destination="vcO-5J-HIU" id="OhJ-u7-ece"/>
+            </connections>
+            <point key="canvasLocation" x="49.600000000000001" y="32.833583208395808"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_directory_delete_button" width="30" height="30"/>
+        <image name="home_directory_move_button" width="30" height="30"/>
+        <image name="home_directory_share_button" width="30" height="30"/>
+    </resources>
+</document>

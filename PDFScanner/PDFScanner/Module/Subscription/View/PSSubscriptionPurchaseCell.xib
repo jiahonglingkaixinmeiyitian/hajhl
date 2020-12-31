@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GlacialIndifference-Bold.otf">
+            <string>GlacialIndifference-Bold</string>
+        </array>
+        <array key="GlacialIndifference-Regular.otf">
+            <string>GlacialIndifference-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PSSubscriptionPurchaseCell">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="166"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="166"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hkc-rM-GzP" userLabel="Container">
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="166"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monthly" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clx-la-tBq">
+                                <rect key="frame" x="37" y="30" width="66.5" height="24"/>
+                                <fontDescription key="fontDescription" name="GlacialIndifference-Regular" family="Glacial Indifference" pointSize="20"/>
+                                <color key="textColor" red="0.1764705882352941" green="0.25098039215686274" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$39.99 / Year" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wj-2y-huh">
+                                <rect key="frame" x="26.5" y="74.5" width="87.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.1764705882352941" green="0.25098039215686274" blue="0.33725490196078434" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$3.33/ Month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCM-ud-voz">
+                                <rect key="frame" x="7.5" y="117" width="125" height="24"/>
+                                <fontDescription key="fontDescription" name="GlacialIndifference-Bold" family="Glacial Indifference" pointSize="20"/>
+                                <color key="textColor" red="0.81960784310000001" green="0.23921568630000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="clx-la-tBq" firstAttribute="centerX" secondItem="Hkc-rM-GzP" secondAttribute="centerX" id="7Qk-64-aJm"/>
+                            <constraint firstItem="5wj-2y-huh" firstAttribute="centerX" secondItem="Hkc-rM-GzP" secondAttribute="centerX" id="mtX-4N-lM6"/>
+                            <constraint firstAttribute="bottom" secondItem="JCM-ud-voz" secondAttribute="bottom" constant="25" id="naJ-qu-Nij"/>
+                            <constraint firstItem="5wj-2y-huh" firstAttribute="centerY" secondItem="Hkc-rM-GzP" secondAttribute="centerY" id="ndv-Yi-Y0f"/>
+                            <constraint firstItem="clx-la-tBq" firstAttribute="top" secondItem="Hkc-rM-GzP" secondAttribute="top" constant="30" id="qHY-5T-Xy8"/>
+                            <constraint firstItem="JCM-ud-voz" firstAttribute="centerX" secondItem="Hkc-rM-GzP" secondAttribute="centerX" id="rMM-k6-IyN"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ho-Mr-LsI" userLabel="Bubble">
+                        <rect key="frame" x="73" y="-4" width="67" height="25"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SAVE 67%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ak2-gX-Gkg">
+                                <rect key="frame" x="8" y="5" width="54" height="15"/>
+                                <fontDescription key="fontDescription" name="GlacialIndifference-Bold" family="Glacial Indifference" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.81960784313725488" green="0.23921568627450979" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Ak2-gX-Gkg" secondAttribute="bottom" constant="5" id="FcV-6j-24t"/>
+                            <constraint firstItem="Ak2-gX-Gkg" firstAttribute="leading" secondItem="5Ho-Mr-LsI" secondAttribute="leading" constant="8" id="Ihk-Js-7uk"/>
+                            <constraint firstAttribute="trailing" secondItem="Ak2-gX-Gkg" secondAttribute="trailing" constant="5" id="O2N-Ae-CB4"/>
+                            <constraint firstItem="Ak2-gX-Gkg" firstAttribute="top" secondItem="5Ho-Mr-LsI" secondAttribute="top" constant="5" id="S9O-c0-q8t"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="5Ho-Mr-LsI" firstAttribute="trailing" secondItem="Hkc-rM-GzP" secondAttribute="trailing" id="6Rd-xp-CzT"/>
+                <constraint firstItem="Hkc-rM-GzP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="aDC-ZR-JAl"/>
+                <constraint firstAttribute="bottom" secondItem="Hkc-rM-GzP" secondAttribute="bottom" id="ggT-4k-bYb"/>
+                <constraint firstItem="5Ho-Mr-LsI" firstAttribute="top" secondItem="Hkc-rM-GzP" secondAttribute="top" constant="-4" id="kiE-ws-X5z"/>
+                <constraint firstAttribute="trailing" secondItem="Hkc-rM-GzP" secondAttribute="trailing" id="lRg-C6-8Ms"/>
+                <constraint firstItem="Hkc-rM-GzP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tnP-0A-5KO"/>
+            </constraints>
+            <size key="customSize" width="140" height="166"/>
+            <connections>
+                <outlet property="bubbleTextLabel" destination="Ak2-gX-Gkg" id="A5e-Zf-ccP"/>
+                <outlet property="bubbleView" destination="5Ho-Mr-LsI" id="RlR-iG-yXa"/>
+                <outlet property="container" destination="Hkc-rM-GzP" id="ctc-fV-PBM"/>
+            </connections>
+            <point key="canvasLocation" x="202.89855072463769" y="148.66071428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>

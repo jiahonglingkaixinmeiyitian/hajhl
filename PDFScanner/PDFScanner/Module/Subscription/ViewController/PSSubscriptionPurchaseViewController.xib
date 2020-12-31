@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GlacialIndifference-Bold.otf">
+            <string>GlacialIndifference-Bold</string>
+        </array>
+        <array key="GlacialIndifference-Regular.otf">
+            <string>GlacialIndifference-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PSSubscriptionPurchaseViewController">
+            <connections>
+                <outlet property="collectionFlowLayout" destination="TQk-Nj-A3i" id="maL-RY-Cun"/>
+                <outlet property="collectionView" destination="TUv-mC-iTr" id="70Q-7C-S0I"/>
+                <outlet property="freeTrialButton" destination="X17-eX-D8X" id="yjx-9P-SNR"/>
+                <outlet property="scrollView" destination="E4V-dd-IKe" id="E71-mJ-PKe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E4V-dd-IKe">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YcT-aP-Uv3" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="885.5"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="subscription_purchase" translatesAutoresizingMaskIntoConstraints="NO" id="huq-WQ-hCA">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="399"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start 3 Days Free Trial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKg-7h-fwr">
+                                    <rect key="frame" x="106" y="447" width="202.5" height="24"/>
+                                    <fontDescription key="fontDescription" name="GlacialIndifference-Bold" family="Glacial Indifference" pointSize="20"/>
+                                    <color key="textColor" red="0.1764705882352941" green="0.25098039215686274" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Then$39.99 / year thereafter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddw-wV-Rqu">
+                                    <rect key="frame" x="99.5" y="479" width="215" height="19.5"/>
+                                    <fontDescription key="fontDescription" name="GlacialIndifference-Bold" family="Glacial Indifference" pointSize="16"/>
+                                    <color key="textColor" red="0.1764705882" green="0.25098039220000001" blue="0.33725490200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="TUv-mC-iTr">
+                                    <rect key="frame" x="0.0" y="531.5" width="414" height="142"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="142" id="3wV-dL-FtA"/>
+                                    </constraints>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="30" id="TQk-Nj-A3i">
+                                        <size key="itemSize" width="142" height="142"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-1" id="Bew-F3-EL5"/>
+                                        <outlet property="delegate" destination="-1" id="8ui-cv-mRq"/>
+                                    </connections>
+                                </collectionView>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X17-eX-D8X">
+                                    <rect key="frame" x="24" y="706.5" width="366" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="1l4-oP-hjo"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="GlacialIndifference-Bold" family="Glacial Indifference" pointSize="16"/>
+                                    <state key="normal" title="Continue With 3 days Free">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="25"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="clickFreeTrialButton:" destination="-1" eventType="touchUpInside" id="uwL-LM-wVp"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Length of Subscription: 1 Week. Price: 3 days free trail. Then auto-renews at $39.99/year. Payment will." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ru-aV-SE5">
+                                    <rect key="frame" x="24" y="796.5" width="366" height="29"/>
+                                    <fontDescription key="fontDescription" name="GlacialIndifference-Regular" family="Glacial Indifference" pointSize="12"/>
+                                    <color key="textColor" red="0.1764705882" green="0.25098039220000001" blue="0.33725490200000002" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="TUv-mC-iTr" secondAttribute="trailing" id="0ci-Ah-xup"/>
+                                <constraint firstAttribute="trailing" secondItem="X17-eX-D8X" secondAttribute="trailing" constant="24" id="3td-cD-1ZX"/>
+                                <constraint firstItem="1Ru-aV-SE5" firstAttribute="top" secondItem="X17-eX-D8X" secondAttribute="bottom" constant="40" id="BRL-04-KIM"/>
+                                <constraint firstAttribute="trailing" secondItem="1Ru-aV-SE5" secondAttribute="trailing" constant="24" id="CEW-MR-7c0"/>
+                                <constraint firstItem="Ddw-wV-Rqu" firstAttribute="top" secondItem="jKg-7h-fwr" secondAttribute="bottom" constant="8" id="PXp-dN-eRg"/>
+                                <constraint firstItem="TUv-mC-iTr" firstAttribute="leading" secondItem="YcT-aP-Uv3" secondAttribute="leading" id="S22-1z-VdX"/>
+                                <constraint firstAttribute="trailing" secondItem="huq-WQ-hCA" secondAttribute="trailing" id="SG7-Fb-DYJ"/>
+                                <constraint firstItem="X17-eX-D8X" firstAttribute="leading" secondItem="YcT-aP-Uv3" secondAttribute="leading" constant="24" id="Wdr-Tn-gxx"/>
+                                <constraint firstItem="jKg-7h-fwr" firstAttribute="centerX" secondItem="YcT-aP-Uv3" secondAttribute="centerX" id="Wmd-fh-YS1"/>
+                                <constraint firstItem="huq-WQ-hCA" firstAttribute="leading" secondItem="YcT-aP-Uv3" secondAttribute="leading" id="drv-qN-7ic"/>
+                                <constraint firstItem="jKg-7h-fwr" firstAttribute="top" secondItem="huq-WQ-hCA" secondAttribute="bottom" constant="48" id="h8J-si-BFe"/>
+                                <constraint firstAttribute="bottom" secondItem="1Ru-aV-SE5" secondAttribute="bottom" constant="60" id="hT7-yM-Cqp"/>
+                                <constraint firstItem="Ddw-wV-Rqu" firstAttribute="centerX" secondItem="YcT-aP-Uv3" secondAttribute="centerX" id="lXm-vh-hQJ"/>
+                                <constraint firstItem="TUv-mC-iTr" firstAttribute="top" secondItem="Ddw-wV-Rqu" secondAttribute="bottom" constant="33" id="q19-vZ-TFZ"/>
+                                <constraint firstItem="X17-eX-D8X" firstAttribute="top" secondItem="TUv-mC-iTr" secondAttribute="bottom" constant="33" id="uXs-Ci-9ng"/>
+                                <constraint firstItem="1Ru-aV-SE5" firstAttribute="leading" secondItem="YcT-aP-Uv3" secondAttribute="leading" constant="24" id="wWC-U5-6RC"/>
+                                <constraint firstItem="huq-WQ-hCA" firstAttribute="top" secondItem="YcT-aP-Uv3" secondAttribute="top" id="x7c-WM-SOG"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="YcT-aP-Uv3" firstAttribute="top" secondItem="E4V-dd-IKe" secondAttribute="top" id="1d9-6N-uLe"/>
+                        <constraint firstAttribute="trailing" secondItem="YcT-aP-Uv3" secondAttribute="trailing" id="B7S-Af-WCg"/>
+                        <constraint firstItem="YcT-aP-Uv3" firstAttribute="centerX" secondItem="E4V-dd-IKe" secondAttribute="centerX" id="Bpw-S6-dGY"/>
+                        <constraint firstItem="YcT-aP-Uv3" firstAttribute="leading" secondItem="E4V-dd-IKe" secondAttribute="leading" id="Lfb-tx-xl2"/>
+                        <constraint firstAttribute="bottom" secondItem="YcT-aP-Uv3" secondAttribute="bottom" id="d5g-kf-tur"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.93333333333333335" green="0.94509803921568625" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="E4V-dd-IKe" secondAttribute="bottom" id="Eyb-jm-vYW"/>
+                <constraint firstItem="E4V-dd-IKe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tKc-v7-M1c"/>
+                <constraint firstAttribute="trailing" secondItem="E4V-dd-IKe" secondAttribute="trailing" id="v2u-kc-z7o"/>
+                <constraint firstItem="E4V-dd-IKe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yEN-kN-v6f"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="subscription_purchase" width="414" height="399"/>
+    </resources>
+</document>
